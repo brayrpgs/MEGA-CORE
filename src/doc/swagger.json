@@ -1,0 +1,53 @@
+{
+	"openapi": "3.0.0",
+	"components": {
+		"examples": {},
+		"headers": {},
+		"parameters": {},
+		"requestBodies": {},
+		"responses": {},
+		"schemas": {},
+		"securitySchemes": {}
+	},
+	"info": {
+		"title": "mega-core",
+		"version": "1.0.0",
+		"license": {
+			"name": "ISC"
+		},
+		"contact": {
+			"name": "Brayan Rosales Perez",
+			"email": "brayanymelquisedec@gmail.com",
+			"url": "https://github.com/brayrpgs"
+		}
+	},
+	"paths": {
+		"/api/v1/module": {
+			"get": {
+				"operationId": "GetModuleV1",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"tags": [
+					"Modules"
+				],
+				"security": [],
+				"parameters": []
+			}
+		}
+	},
+	"servers": [
+		{
+			"url": "https://localhost/"
+		}
+	]
+}
